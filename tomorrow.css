@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 500px;
+}
+.day-buttons {
+  margin: 0 auto;
+}
+.day-btn {
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+}
+.day-btn:hover {
+  background-color: rgba(0, 0, 0, 0.541);
+  cursor: pointer;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+
+/* Day Grid Placements */
+
+#sunday {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+#monday {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+#tuesday {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+#wednesday {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+#thursday {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+}
+#friday {
+  grid-column: 1 / 2;
+  grid-row: 6 / 7;
+}
+#saturday {
+  grid-column: 1 / 2;
+  grid-row: 7 / 8;
+}
+.day-msg{
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  align-self: center;
+  font-size: 1.2em;
+}
+
+#result {
+  grid-column: 2 / 4;
+  grid-row: 5 / 7;
+  align-self: center;
+  font-size: 1.2em;
+}
